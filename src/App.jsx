@@ -207,19 +207,19 @@ function getWeatherAlert() {
 
 const insights = weather ? getInsights() : [];
   return (
-    <div className={`min-h-screen flex flex-col items-center justify-center ${darkMode
+    <div className={`min-h-screen flex flex-col items-center justify-center px-4 ${darkMode
       ? "bg-gradient-to-br from-slate-900 to-slate-700"
       : "bg-gradient-to-br from-blue-400 to-cyan-200"
       }`}>
       <div
-        className={`relative backdrop-blur-md p-8 rounded-3xl shadow-2xl text-center
+        className={`relative backdrop-blur-md p-4 md:p-8 rounded-3xl shadow-2xl text-center
 max-w-screen-2xl w-full
 ${darkMode
             ? "bg-slate-800/80 text-white"
             : "bg-white/80 text-gray-800"
           }`}>
         <h1
-          className={`text-4xl font-extrabold mb-8 ${darkMode ? "text-white" : "text-gray-800"
+          className={`text-3xl md:text-4xl font-extrabold mb-8 ${darkMode ? "text-white" : "text-gray-800"
             }`}
         >
           Weather Dashboard

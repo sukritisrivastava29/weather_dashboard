@@ -23,7 +23,7 @@ function SearchBar({
 }) 
 {
     return (
-        <div className="w-full flex  gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
             <div className="relative">
                 <input
                     type="text"
@@ -48,7 +48,7 @@ function SearchBar({
                 }}
                 className="
                 border-2 border-gray-200 dark:border-gray-600
-                p-4 rounded-xl w-56 md:w-64 outline-none shadow-md
+                p-4 rounded-xl w-full outline-none shadow-md sm:w-auto
                 bg-white dark:bg-gray-800
                 text-black dark:text-white
                 placeholder-gray-500 dark:placeholder-gray-400
