@@ -156,7 +156,20 @@ function App() {
       }
     );
   }
+function getWeatherAlert() {
+  if (!weather) return null;
 
+  if (weather.main.temp > 40)
+    return "🔥 Extreme heat warning";
+
+  if (weather.wind.speed > 15)
+    return "🌪️ High wind warning";
+
+  if (weather.weather[0].main === "Thunderstorm")
+    return "⛈️ Thunderstorm warning";
+
+  return null;
+}
   function getAQILabel(value) {
     switch (value) {
       case 1:
