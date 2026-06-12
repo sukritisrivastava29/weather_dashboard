@@ -250,6 +250,7 @@ transition
             locationLoading={locationLoading}
             suggestions={suggestions}
             setSuggestions={setSuggestions}
+            darkMode={darkMode}
           />
         </div>
         {error && (
